@@ -4,8 +4,12 @@ package projetoLocadora;
 
 public class OperadorSistema extends Funcionario {
 
-    // metodos exigidos no trabalho
-
+    public OperadorSistema(String nome, String matricula, String login, String senha) {
+    	super(nome, matricula, login, senha);
+    }
+    public boolean isOperador() {
+    	return true;
+    }
     // metodo para locação de produtos para clientes
     public void LocacaoProduto(){
 

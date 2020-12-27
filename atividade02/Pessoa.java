@@ -2,9 +2,9 @@ package projetoLocadora;
 
 public class Pessoa {
     private String nome;
-    private int matricula;
+    private String matricula;
 
-    public Pessoa(String nome, int matricula){
+    public Pessoa(String nome, String matricula){
         this.nome = nome;
         this.matricula = matricula;
     }
@@ -15,11 +15,19 @@ public class Pessoa {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public int getMatricula() {
+    public String getMatricula() {
         return matricula;
     }
-    public void setMatricula(int matricula) {
+    public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
-    
+    public int getIdade() {
+    	return 0;
+    }
+    public String getEndereco() {
+    	return "";
+    }
+    public String getSexo() {
+    	return "";
+    }
 }

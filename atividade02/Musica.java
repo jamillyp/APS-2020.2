@@ -4,7 +4,8 @@ public class Musica extends Produto{
     private String autor;
     private int numeroFaixas;
 
-    public Musica(String autor, int numeroFaixas){
+    public Musica(String codigo, String titulo, String genero, boolean locado, String autor, int numeroFaixas){
+    	super(codigo, titulo, genero, locado);
         this.autor = autor;
         this.numeroFaixas = numeroFaixas;
     }

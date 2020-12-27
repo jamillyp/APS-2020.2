@@ -4,7 +4,8 @@ public class Filme extends Produto{
     private int anoLancamento;
     private int duracao;
 
-    public Filme(int anoLancamento, int duracao){
+    public Filme(String codigo, String titulo, String genero, boolean locado, int anoLancamento, int duracao){
+    	super(codigo, titulo, genero, locado);
         this.anoLancamento = anoLancamento;
         this.duracao = duracao;
     }
